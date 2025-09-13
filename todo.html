@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>To-Do App</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="index.html"></a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="todo.html">To-Do</a>
+<a href="products.html">Products</a>
+<a href="contact.html">Contact</a>
+</nav>
+<button class="menu-btn">☰</button>
+</div>
+</header>
+
+
+<main class="container">
+<h1>To-Do List</h1>
+<form id="todo-form">
+<input id="task-input" placeholder="New task" required />
+<select id="priority-select">
+<option value="low">Low</option>
+<option value="medium" selected>Medium</option>
+<option value="high">High</option>
+</select>
+<button class="btn">Add</button>
+</form>
+
+
+<div class="controls">
+<input id="search" placeholder="Search tasks" />
+<select id="filter-priority">
+<option value="all">All</option>
+<option value="high">High</option>
+<option value="medium">Medium</option>
+<option value="low">Low</option>
+</select>
+<select id="sort-by">
+<option value="created-desc">Newest</option>
+<option value="created-asc">Oldest</option>
+<option value="priority-desc">Priority</option>
+</select>
+</div>
+
+
+<ul id="task-list"></ul>
+</main>
+
+
+<footer class="site-footer">
+<small></small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
